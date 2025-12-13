@@ -1,2 +1,2 @@
 import contractData from './LoanManager.json';
-export const LoanManagerABI = contractData.abi as const;
+export const LoanManagerABI = contractData.abi;

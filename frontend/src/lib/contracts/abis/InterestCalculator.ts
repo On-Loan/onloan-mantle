@@ -1,2 +1,2 @@
 import contractData from './InterestCalculator.json';
-export const InterestCalculatorABI = contractData.abi as const;
+export const InterestCalculatorABI = contractData.abi;

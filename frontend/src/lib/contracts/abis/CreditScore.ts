@@ -1,2 +1,2 @@
 import contractData from './CreditScore.json';
-export const CreditScoreABI = contractData.abi as const;
+export const CreditScoreABI = contractData.abi;

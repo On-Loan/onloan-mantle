@@ -75,9 +75,9 @@ export const PortfolioStats = ({ userBalance }: PortfolioStatsProps) => {
                     className={`text-xs font-medium ${
                       stat.changeType === 'positive'
                         ? 'text-green-600 dark:text-green-400'
-                        : stat.changeType === 'negative'
-                        ? 'text-red-600 dark:text-red-400'
-                        : 'text-gray-600 dark:text-gray-400'
+                        : stat.changeType === 'neutral'
+                        ? 'text-gray-600 dark:text-gray-400'
+                        : 'text-red-600 dark:text-red-400'
                     }`}
                   >
                     {stat.change}

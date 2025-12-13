@@ -15,7 +15,6 @@ export const Card = ({
   icon: Icon,
   children,
   className = '',
-  ...props
 }: CardProps) => {
   const baseStyles = 'rounded-2xl bg-white dark:bg-gray-900 transition-all duration-200';
 
@@ -30,7 +29,6 @@ export const Card = ({
       <motion.div
         className={`${baseStyles} ${variantStyles[variant]} ${className}`}
         whileHover={{ y: -2 }}
-        {...props}
       >
         {Icon && (
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-primary-100 dark:bg-primary-900/20">
@@ -51,7 +49,6 @@ export const Card = ({
     <motion.div
       className={`${baseStyles} ${variantStyles[variant]} ${className}`}
       whileHover={variant === 'elevated' ? { y: -4 } : undefined}
-      {...props}
     >
       {title && (
         <div className="mb-4 flex items-center gap-3">

@@ -1,8 +1,9 @@
+import React from 'react';
 import { TrendingUp, HandCoins, Droplet, ArrowRight } from 'lucide-react';
 import { Button, Card } from '../../components/ui';
 import { Link } from 'react-router-dom';
 
-export const QuickActions = (): JSX.Element => {
+export const QuickActions = (): React.ReactElement => {
   const actions = [
     {
       title: 'Deposit & Earn',

@@ -23,7 +23,6 @@ export const ClaimHistory = () => {
   ];
 
   const formatTimestamp = (timestamp: number) => {
-    const date = new Date(timestamp);
     const now = Date.now();
     const diff = now - timestamp;
     const hours = Math.floor(diff / (1000 * 60 * 60));
